@@ -1,0 +1,63 @@
+#bg {
+    background-color: rgb(29, 29, 29);
+}
+
+.intro {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 4.5rem;
+    color: aliceblue;
+    display: inline;
+    margin: 1px;
+}
+
+#one {
+    margin-right: 0%;
+}
+
+#two {
+    margin-left: 50%;
+}
+
+
+#intro-section {
+    margin-top: 23%;
+    display : flex;
+    flex-direction: row;    
+}       
+
+#name {
+    margin-left: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#fullstack {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#name-line {
+
+    width: 0%; /* Initial width set to 0% */
+    border: none; /* Remove default border */
+    height: 50px; /* Set the height of the hr line */
+    background-color: #ffffff; /* Set the color of the hr line */
+    transform-origin: left; /* Set the transform origin to left */
+    animation: expandWidth 1s ; /* Animation properties */
+}   
+
+@keyframes expandWidth {
+    from
+    {
+        position: absolute;
+        left: 0;
+        width: 0%; /* Initial width set to 0% */
+    }
+    to {
+        width: 100%; /* Final width set to 100% */
+        left: 0;
+    }
+}

@@ -1,3 +1,5 @@
+
+
 #bg {
     background-color: rgb(29, 29, 29);
 }
@@ -27,6 +29,7 @@
 }       
 
 #name {
+
     margin-left: 10%;
     width: 50%;
     display: flex;
@@ -39,25 +42,26 @@
     flex-direction: column;
 }
 
-#name-line {
 
-    width: 0%; /* Initial width set to 0% */
-    border: none; /* Remove default border */
-    height: 50px; /* Set the height of the hr line */
-    background-color: #ffffff; /* Set the color of the hr line */
-    transform-origin: left; /* Set the transform origin to left */
-    animation: expandWidth 1s ; /* Animation properties */
-}   
+#bar {
+    width: 100%; /* Set the width to 100% to match the parent */
+    height: 1.5%;
+    background-color: white;
+    transform: scaleX(1); /* Set the initial scale to 100% */
+    transform-origin: left top;
+    animation: scaleAnimation 2s ease-out forwards; /* Apply the animation */
+}
 
-@keyframes expandWidth {
-    from
-    {
-        position: absolute;
-        left: 0;
-        width: 0%; /* Initial width set to 0% */
+
+@keyframes scaleAnimation {
+    from {
+        transform: scaleX(0); /* Start with zero scale */
     }
     to {
-        width: 100%; /* Final width set to 100% */
-        left: 0;
+        transform: scaleX(1); /* End with full scale */
     }
 }
+
+
+
+

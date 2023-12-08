@@ -1,5 +1,3 @@
-
-
 #bg {
     background-color: rgb(29, 29, 29);
 }
@@ -24,9 +22,9 @@
 
 #intro-section {
     margin-top: 23%;
-    display : flex;
-    flex-direction: row;    
-}       
+    display: flex;
+    flex-direction: row;
+}
 
 #name {
 
@@ -44,24 +42,54 @@
 
 
 #bar {
-    width: 100%; /* Set the width to 100% to match the parent */
+    width: 100%;
+    /* Set the width to 100% to match the parent */
     height: 1.5%;
     background-color: white;
-    transform: scaleX(1); /* Set the initial scale to 100% */
+    transform: scaleX(1);
+    /* Set the initial scale to 100% */
     transform-origin: left top;
-    animation: scaleAnimation 2s ease-out forwards; /* Apply the animation */
+    animation: scaleAnimation 2s ease-out forwards;
+    /* Apply the animation */
 }
 
 
 @keyframes scaleAnimation {
     from {
-        transform: scaleX(0); /* Start with zero scale */
+        transform: scaleX(0);
+        /* Start with zero scale */
     }
+
     to {
-        transform: scaleX(1); /* End with full scale */
+        transform: scaleX(1);
+        /* End with full scale */
     }
 }
 
 
+#full {
+    color: rgb(255, 105, 68);
+    font-weight: 800;
+    text-shadow: 1px 1px 10px rgb(255, 177, 76),
+        1px 1px 30px rgb(255, 177, 76),
+        1px 1px 60px rgb(255, 177, 76),
+        1px 1px 100px rgb(255, 177, 76);
+}
 
+#stack {
+    color: rgb(255, 206, 43);
+    font-weight: 800;
+    text-shadow: 1px 1px 10px rgb(255, 240, 123),
+        1px 1px 30px rgb(255, 240, 123),
+        1px 1px 60px rgb(255, 240, 123),
+        1px 1px 100px rgb(255, 240, 123);
+}
 
+#developer {
+    color: rgb(136, 247, 237); 
+    font-weight: 800;
+    text-shadow: 1px 1px 10px rgb(123, 226, 255),
+        1px 1px 30px rgb(123, 226, 255),
+        1px 1px 60px rgb(123, 226, 255),
+        1px 1px 100px rgb(123, 226, 255);x
+}

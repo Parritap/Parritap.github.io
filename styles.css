@@ -70,26 +70,65 @@
 #full {
     color: rgb(255, 105, 68);
     font-weight: 800;
-    text-shadow: 1px 1px 10px rgb(255, 177, 76),
-        1px 1px 30px rgb(255, 177, 76),
-        1px 1px 60px rgb(255, 177, 76),
-        1px 1px 100px rgb(255, 177, 76);
+    text-shadow: 1px 1px 10px rgb(255, 177, 76);
+        /* 1px 1px 20px rgb(255, 177, 76); */
+        /* 1px 1px 60px rgb(255, 177, 76), */
+        /* 1px 1px 100px rgb(255, 177, 76); */
 }
 
 #stack {
     color: rgb(255, 206, 43);
     font-weight: 800;
-    text-shadow: 1px 1px 10px rgb(255, 240, 123),
-        1px 1px 30px rgb(255, 240, 123),
-        1px 1px 60px rgb(255, 240, 123),
-        1px 1px 100px rgb(255, 240, 123);
+    text-shadow: 1px 1px 10px rgb(255, 240, 123);
+        /* 1px 1px 20px rgb(255, 240, 123); */
+        /* 1px 1px 60px rgb(255, 240, 123), */
+        /* 1px 1px 100px rgb(255, 240, 123); */
 }
 
 #developer {
-    color: rgb(136, 247, 237); 
+    color: rgb(136, 247, 237);
     font-weight: 800;
-    text-shadow: 1px 1px 10px rgb(123, 226, 255),
-        1px 1px 30px rgb(123, 226, 255),
-        1px 1px 60px rgb(123, 226, 255),
-        1px 1px 100px rgb(123, 226, 255);x
+    text-shadow: 1px 1px 10px rgb(123, 226, 255);
+        /* 1px 1px 20px rgb(123, 226, 255); */
+        /* 1px 1px 60px rgb(123, 226, 255), */
+        /* 1px 1px 100px rgb(123, 226, 255); */
+}
+
+.type-machine {
+    display: inline-block;
+    width: max-content;
+}
+
+
+.introRigth {
+
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 4.5rem;
+    color: aliceblue;
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 5px solid rgba(255, 255, 255, 0.738);
+    animation:
+        typing 3.5s,
+        cursor 0.5s step-end infinite alternate;
+}
+
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
 }

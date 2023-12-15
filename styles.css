@@ -1,22 +1,70 @@
-body{
-    background: #292929;
+body {
+    background: #111111;
 }
 
 #bg {
+    /*position: fixed;*/
+    /*top: -10%;*/
+    /*left: -10%;*/
+    /*z-index: -1;*/
+    /*width: calc(100% + 20%);*/
+    /*height: calc(100% + 20%);*/
+    /*background: repeating-linear-gradient(*/
+    /*        #292929,*/
+    /*        #292929 50%,*/
+    /*        #191919 50%,*/
+    /*        #191919 15px*/
+    /*);*/
+    /*background-size: 5px 5px;*/
+    /*filter: url('#noise');*/
+
     position: fixed;
-    top: -10%;
-    left: -10%;
     z-index: -1;
-    width: calc(100% + 20%);
-    height: calc(100% + 20%);
-    background: repeating-linear-gradient(
-            #000000,
-            #000000 50%,
-            #292929 50%,
-            #292929 15px
-    );
-    background-size: 5px 5px;
-    filter: url('#noise');
+    top: -300%;
+    left: -150%;
+    height: 600%;
+    width: 600%;
+    -webkit-animation: grain 7s steps(10) infinite;
+    animation: grain 7s steps(10) infinite;
+    background-image: url(/resources/noise.png);
+    background-size: 200px;
+    background-repeat: repeat;
+    opacity: .25;
+}
+
+@keyframes grain {
+    0%, 100% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(-5%, -10%);
+    }
+    20% {
+        transform: translate(-15%, 5%);
+    }
+    30% {
+        transform: translate(7%, -25%);
+    }
+    40% {
+        transform: translate(-5%, 25%);
+    }
+    50% {
+        transform: translate(-15%, 10%);
+    }
+    60% {
+        transform: translate(15%);
+    }
+    70% {
+        transform: translateY(15%);
+    }
+    80% {
+        transform: translate(3%, 35%);
+    }
+
+    90% {
+        transform: translate(-10%, 10%);
+    }
+
 }
 
 .intro {
@@ -67,7 +115,7 @@ body{
     transform: scaleX(1);
     /* Set the initial scale to 100% */
     transform-origin: left top;
-    animation: scaleAnimation 2s ease-out forwards;
+    animation: scaleAnimation 3.5s ease-out forwards;
     /* Apply the animation */
 }
 
@@ -119,6 +167,7 @@ body{
     white-space: nowrap;
     border-right: 5px solid rgba(255, 255, 255, 0.738);
     animation: typing 3.5s,
+    border-hide 3.5s ease-in-out 4s forwards,
     cursor 0.5s step-end infinite alternate;
 }
 
@@ -137,4 +186,26 @@ body{
     to {
         width: 100%;
     }
+}
+
+
+@keyframes border-hide {
+    to {
+        border-right: 0;
+    }
+}
+
+#presentation {
+    display: flex;
+    flex-direction: row;
+    z-index: 0;
+
+}
+
+#profilePic {
+    position: absolute;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: 5px solid white;
 }

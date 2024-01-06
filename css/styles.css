@@ -303,15 +303,17 @@ body {
 #dot {
     width: 5px;
     height: 5px;
-    background-color: rgb(255, 157, 157);
+    background-color: rgb(84, 255, 164);
 }
 
 #cursor-outline {
-    opacity: 0.5;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 1000px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    mix-blend-mode: difference;
+    filter: invert(100%);
+    z-index: 2;
 }
 
 #dot,
@@ -321,6 +323,5 @@ body {
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 1000px;
-    z-index: 100;
     pointer-events: none;
 }

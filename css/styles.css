@@ -1,5 +1,6 @@
 body {
     background: #111111;
+    cursor: none;
 }
 
 #bg {
@@ -236,20 +237,20 @@ body {
     transition: all 0.5s ease;
 }
 
-#coin:hover {   
+#coin:hover {
     transform: rotateY(180deg);
 }
 
-#film{
+#film {
     width: 50%;
     height: 100%;
-    position:absolute;
+    position: absolute;
     z-index: 2;
     /* background-color: rgba(0, 255, 255, 0.5); */
 }
 
 
-#front{
+#front {
     width: 100%;
     position: absolute;
     /* margin-left: 10%; */
@@ -258,7 +259,7 @@ body {
     backface-visibility: hidden;
 }
 
-#back{
+#back {
     position: absolute;
     width: 100%;
     /* margin-left: 10%; */
@@ -266,13 +267,60 @@ body {
     max-width: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-}   
+}
 
-#profilePic, #reversePic{
+#profilePic,
+#reversePic {
     width: 100%;
     border-radius: 1000px;
 }
 
 #aux {
-    width:5%
+    width: 5%
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: all 3s;
+    filter: blur(5px);
+    /* transform: translateX(-100%); */
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+#dot {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 157, 157);
+}
+
+#cursor-outline {
+    opacity: 0.5;
+    width: 70px;
+    height: 70px;
+    border-radius: 1000px;
+    background-color: rgb(255, 255, 255);
+}
+
+#dot,
+#cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 1000px;
+    z-index: 100;
+    pointer-events: none;
 }

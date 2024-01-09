@@ -1,5 +1,5 @@
 body {
-    background: #111111;
+    background: #000000;
     cursor: none;
 }
 
@@ -72,10 +72,6 @@ body {
     margin: 1px;
 }
 
-#one {
-    margin-right: 0%;
-}
-
 #two {
     margin-left: 50%;
 }
@@ -99,6 +95,7 @@ body {
     width: 50%;
     display: flex;
     justify-content: center;
+    margin-right: 2%;
 }
 
 #fullstack {
@@ -211,6 +208,12 @@ body {
 }
 
 
+.text {
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+}
+
+
 #about {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -229,6 +232,7 @@ body {
 
 #thatsme {
     width: 50%;
+    flex-direction: column;
 }
 
 #coin {
@@ -310,9 +314,10 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 1000px;
-    background-color: rgb(0, 0, 0);
-    mix-blend-mode: difference;
-    filter: invert(100%);
+    border: 2px solid rgb(255, 255, 255);
+    /* background-color: rgb(0, 0, 0); */
+    /* mix-blend-mode: difference; */
+    /* filter: invert(100%); */
     z-index: 2;
 }
 
@@ -325,3 +330,24 @@ body {
     border-radius: 1000px;
     pointer-events: none;
 }
+
+
+/* <section> */
+#about {
+    margin-top: 10%;
+}
+
+
+#about-me {
+    font-size: 10rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#face {
+    font-size: 13rem;
+    font-weight: bolder;
+    transform: rotate(90deg);
+    letter-spacing: 1.5rem;
+}
+

@@ -46,3 +46,19 @@ window.addEventListener( "mousemove", (e) => {
          duration:150, fill: "forwards"
       });
 });
+
+
+// Chaging the smaling face content on hover: 
+
+const face = document.querySelector("#face");
+console.log(face);
+
+face.addEventListener(("mouseover"), ()=> {
+      face.innerHTML = ";)";
+});
+
+face.addEventListener(("mouseout"), ()=> {
+   face.innerHTML = ":)";
+});
+
+// ---------------------------------------------

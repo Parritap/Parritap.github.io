@@ -207,13 +207,13 @@ body {
 
 
 #about {
+    margin-top: 30%;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     color: aliceblue;
     font-size: 2rem;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
 }
 
 .center {
@@ -328,14 +328,8 @@ body {
 }
 
 
-/* <section> */
-#about {
-    margin-top: 10%;
-}
-
 
 .inspire {
-    margin-top: 20%;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 4rem;
@@ -351,3 +345,6 @@ body {
     letter-spacing: 1.5rem;
 }
 
+.bold {
+    font-weight: bold;
+}

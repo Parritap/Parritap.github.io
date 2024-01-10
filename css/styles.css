@@ -193,7 +193,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     color: aliceblue;
-    font-size: 12;
+    font-size: 12rem;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -352,4 +352,24 @@ body {
 
 .bold {
     font-weight: bold;
+}
+
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+}
+
+#technologies {
+    top: 50%;
+    left: 50%;
+}
+
+.tech-img {
+    max-width: 300px;
+    max-height: 300px;
 }

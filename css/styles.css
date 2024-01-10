@@ -193,7 +193,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     color: aliceblue;
-    font-size: 13rem;
+    font-size: 12;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -224,6 +224,10 @@ body {
 
 .column {
     flex-direction:column;
+}
+
+.row {
+    flex-direction: row;
 }
 
 #thatsme {
@@ -271,6 +275,7 @@ body {
 
 #profilePic,
 #reversePic {
+    z-index: 0;
     width: 100%;
     border-radius: 1000px;
 }
